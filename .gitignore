@@ -1,2 +1,3 @@
-/.env
-/.gitgnore
+node_modules/
+.env
+dist
