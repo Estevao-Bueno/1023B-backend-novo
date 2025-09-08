@@ -67,7 +67,7 @@ app.get('/produtos', async (req, res) => {
         res.status(500).send("DBPORT não está definido nas variáveis de ambiente");
         return;
     }
-    try {
+    try { 
         const conn = await mysql.createConnection({
             host: process.env.DBHOST,
             user: process.env.DBUSER,
