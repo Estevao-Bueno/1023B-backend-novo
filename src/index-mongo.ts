@@ -12,7 +12,7 @@ const app = express()
 //Esse middlewe faz com que o express
 app.use(express.json())
 //Criando uma rota  para acesso pelo navegador
-app.get('/prodtudos', async (req:Request, res:Response) => {
+app.get('/produtos', async (req:Request, res:Response) => {
     const produtos = await db.collection('produtos').find().toArray()
     res.json(produtos)
 })
